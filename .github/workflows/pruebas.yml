@@ -52,4 +52,4 @@ jobs:
           path: |
             Hito 2/benchmarks/*.png
             Hito 2/resultados_bench_*.png
-            Hito 3/Benchmark/*.png
+            Hito 3/benchmarks/*.png
