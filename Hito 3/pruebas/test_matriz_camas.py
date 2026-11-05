@@ -5,7 +5,6 @@ from nucleo.matriz_camas import MatrizCamas, crear_matriz
 @pytest.fixture
 def matriz():
     return MatrizCamas(n_turnos=3, n_camas=4)
- 
 
 class TestConstruccion:
     def test_dimensiones_y_estado_inicial(self, matriz):
@@ -63,10 +62,7 @@ class TestAsignar:
         # con el turno lleno, cualquier asignacion adicional falla
         with pytest.raises(ValueError):
             matriz.asignar(0, 0)
- 
- 
-# ---------- Liberar ----------
- 
+
 class TestLiberar:
     def test_liberar_deja_la_cama_libre(self, matriz):
         matriz.asignar(1, 2)
@@ -138,10 +134,7 @@ class TestValidacion:
     def test_disponibilidad_turno_fuera_de_rango(self, matriz):
         with pytest.raises(IndexError):
             matriz.consultar_disponibilidad(3)
- 
- 
-# ---------- Consultas ----------
- 
+
 class TestConsultas:
     def test_ocupacion_cuenta_las_asignadas(self, matriz):
         matriz.asignar(0, 0)
