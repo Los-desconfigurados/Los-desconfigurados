@@ -17,15 +17,12 @@ DURACION_ATENCION = 1  # minutos simulados por paciente
  
  
 class _ColaTriageCompatible:
-
- 
     def __init__(self, cola_real):
         self._real = cola_real
         self._colas = {nivel: cola_real._colas[nivel] for nivel in range(1, 6)}
  
     def envejecer(self, ahora=None):
         return self._real.envejecer(ahora=ahora)
- 
  
 class _SistemaCompatible:
   
@@ -120,9 +117,7 @@ def main():
  
     print(f"\nEvidencia guardada en {ruta}")
  
-    # Codigo de salida: 0 si aprobado, 1 si fallo (sirve para el CI)
     sys.exit(0 if aprobado else 1)
- 
  
 if __name__ == "__main__":
     main()
