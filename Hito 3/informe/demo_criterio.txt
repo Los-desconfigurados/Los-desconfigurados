@@ -1,0 +1,17 @@
+DEMO DEL CRITERIO DE EXITO
+Fecha: 2026-11-05 09:33
+Python 3.14.7 (Windows)
+Admisiones por simulacion: 5000
+Semillas: 1, 2, 3, 4, 5
+Limite de tiempo: 2.0 s | Duracion de atencion: 1 min
+Espera medida por el nivel ORIGINAL (antes del envejecimiento), en minutos.
+
+semilla  tiempo (s)   media I  media II    max I   max II   < 2 s  I <= II  completo
+----------------------------------------------------------------------------------------
+      1       0.384      3.13      6.17    22.35    28.92      si       si        si
+      2       0.971     36.02     41.20   152.52   157.88      si       si        si
+      3       0.641     25.62     31.76   118.36   125.12      si       si        si
+      4       0.610     18.98     24.01    49.52    54.97      si       si        si
+      5       0.526     21.75     26.22    77.90    81.79      si       si        si
+
+RESULTADO: APROBADO
