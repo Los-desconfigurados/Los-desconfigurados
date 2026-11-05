@@ -37,11 +37,11 @@ jobs:
 
       - name: Ejecutar benchmark de grafos
         working-directory: ./Hito 3
-        run: python Benchmark/bench_grafo.py
+        run: python benchmarks/bench_grafo.py
 
       - name: Ejecutar demo del criterio de éxito
         working-directory: ./Hito 3
-        run: python Benchmark/demo_criterio.py
+        run: python benchmarks/demo_criterio.py
 
 
       - name: Subir gráficos de benchmarks
