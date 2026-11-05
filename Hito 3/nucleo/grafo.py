@@ -1,5 +1,5 @@
 import sys
-from hito 2.nucleo.lista_simple import ListaSimple
+from Hito 2.nucleo.lista_simple import ListaSimple
 from nucleo.dominio import Servicio
 
 
