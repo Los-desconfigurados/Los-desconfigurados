@@ -123,8 +123,8 @@ def main():
         escritor.writerows(filas)
 
     print()
-    print("Valores en bytes. 'est.' = Grafo.memoria() (superficial);")
-    print("'med.' = memoria asignada medida con tracemalloc.")
+    print("Valores en bytes. 'est.' = estimacion de Grafo.memoria();")
+    print("'med.' = memoria adicional medida con tracemalloc.")
     print(f"Tabla guardada en {ruta}")
 
 
